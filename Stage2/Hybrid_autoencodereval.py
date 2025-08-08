@@ -69,8 +69,8 @@ if __name__ == "__main__":
 
     with (torch.no_grad()):
 
-        img_path = "./Aug_MONAI_save_bs"  # 测试集图像路径
-        save_path = "./Final"
+        img_path = "./Stage1/Results"  # 测试集图像路径
+        save_path = "./Stage2/Final"
 
         for filename in os.listdir(img_path):
             cxr_path = img_path + "/" + filename

@@ -64,8 +64,8 @@ if __name__ == "__main__":
     model.eval()
     model.to(device)
 
-    img_path = "./Test_CXR"  # 测试集图像路径
-    save_path = "./Aug_save_bs"
+    img_path = "./Data/CXR_Aug"  # 测试集图像路径
+    save_path = "./Stage1/Results"  
 
     for filename in os.listdir(img_path):
         cxr_path = img_path + "/" + filename
